@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-SMB Enumeration Framework
+
+Overlord is a command-and-control orchestration framework for authorized red-team operations that coordinates tasking and results across simulated agents. It manages listeners, queues operator commands and aggregates responses in a single console. It is intended strictly for authorized adversary-simulation on systems you own or are permitted to test.
 
 ---
 
 ## ✨ Features
 
-- Authorized SMB enumeration with MITRE ATT&CK risk scoring (null-session audit, lab defaults)
+
+- Orchestration of operator tasking across managed agents/listeners
+- Command queueing and result aggregation in one console
+- Listener/session management for simulated engagements
+- Structured logging of operations for after-action review
+- Configurable, authorization-gated operation workflow
+- Offline --self-test for safe verification
 
 ---
 
@@ -37,8 +44,11 @@ SMB Enumeration Framework
 
 ## 🚀 Usage
 
+
 ```bash
 ./Overlord
+./Overlord --self-test
+./Overlord --help
 ```
 
 ---
